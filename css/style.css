@@ -1,7 +1,9 @@
+
 header{
-    width: 100%;
+    width: 99%;
     height:80px;
     position: fixed;
+    padding: 13px;
     top: 0;
     left: 0;
     z-index:5; /*header behind h1*/
@@ -11,4 +13,18 @@ header{
     border-bottom-left-radius: 15px;
     border-top-left-radius:15px;
     border-top-right-radius:15px;
+}
+
+header input{
+    width: 90%;
+    height: 50%;
+    float: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color:rgb(255,228,196,0.9);
+    border-radius: 8px;
+    box-shadow: none;
+    outline: none;
 }
