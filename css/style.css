@@ -23,6 +23,8 @@ header input {
     width: 90%;
     height: 50%;
     float: left;
+    padding:4px 20px 0 0 ;
+    color: rgb(47,79,79);
     font-family:Rachana;
     font-weight: 40px;
     font-size: 20px;
