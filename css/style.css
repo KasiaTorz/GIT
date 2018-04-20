@@ -7,7 +7,7 @@ font-weight:40px;
  */
 body{
     background-color: rgb(245,245,245);
-    padding: 80px 0 0 0 ;
+    padding: 100px 0 0 0 ;
 }
 /*Header */
 header{
@@ -75,6 +75,23 @@ header button svg .fill{
     float: left;
     padding: 20px;
 }
+ul.todo1 .buttoms{
+    width:100px;
+    height: 100px;
+    position:absolute ;
+    top:0;
+    right:0;
+}
+ul.todo1 .buttoms button{
+    width:50px;
+    height: 50px;
+    float: left;
+    background: none;
+    border: 5px;
+    box-shadow: none;
+    outline-style: none;
+
+}
 ul.todo1{
     width: 100%;
     float: left;
@@ -83,8 +100,13 @@ ul.todo1 li{
     width: 100%;
     float: left;
     height: 50px;
+    font-size: 14px;
+    font-weight:500;
     background-color: rgb(232, 238, 79);
     border-radius: 5%;
+    padding-top: 15px;
+    padding-left: 15px;
+    position:relative;
     box-shadow: 0px 3px 4px 0px rgb(255, 132, 177,0.10);
     margin:10px;
 }
@@ -96,8 +118,12 @@ ul.todo2 li{
     width: 100%;
     float: left;
     height: 50px;
+    font-size: 14px;
+    font-weight:500;
     background-color: rgb(155, 133, 238);
     border-radius: 5%;
+    padding-top: 15px;
+    padding-left: 15px;
     box-shadow: 0px 3px 4px 0px rgb(255, 132, 177,0.10);
     margin:10px;
 }
@@ -109,9 +135,16 @@ ul.todo3 li{
     width: 100%;
     float: left;
     height: 50px;
+    font-size: 14px;
+    font-weight:500;
     background-color: rgb(238, 85, 88);
     border-radius: 5%;
+    padding-top: 15px;
+    padding-left: 15px;
     box-shadow: 0px 3px 4px 0px rgb(255, 132, 177,0.10);
     margin:10px;
 }
 
+ul.todo1 li .buttoms button svg{
+    width: ;
+}
