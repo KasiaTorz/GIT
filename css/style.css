@@ -7,8 +7,9 @@ font-weight:40px;
  */
 body{
     background-color: rgb(245,245,245);
+    padding: 80px 0 0 0 ;
 }
-
+/*Header */
 header{
     width: 99%;
     height:80px;
@@ -68,3 +69,49 @@ header input {
 header button svg .fill{
     fill:rgb(47,79,79) ;
 }
+/*Inputs */
+.container1 .container2 .container3{
+    width:100%;
+    float: left;
+    padding: 20px;
+}
+ul.todo1{
+    width: 100%;
+    float: left;
+}
+ul.todo1 li{
+    width: 100%;
+    float: left;
+    height: 50px;
+    background-color: rgb(232, 238, 79);
+    border-radius: 5%;
+    box-shadow: 0px 3px 4px 0px rgb(255, 132, 177,0.10);
+    margin:10px;
+}
+ul.todo2{
+    width: 100%;
+    float: left;
+}
+ul.todo2 li{
+    width: 100%;
+    float: left;
+    height: 50px;
+    background-color: rgb(155, 133, 238);
+    border-radius: 5%;
+    box-shadow: 0px 3px 4px 0px rgb(255, 132, 177,0.10);
+    margin:10px;
+}
+ul.todo3{
+    width: 100%;
+    float: left;
+}
+ul.todo3 li{
+    width: 100%;
+    float: left;
+    height: 50px;
+    background-color: rgb(238, 85, 88);
+    border-radius: 5%;
+    box-shadow: 0px 3px 4px 0px rgb(255, 132, 177,0.10);
+    margin:10px;
+}
+
