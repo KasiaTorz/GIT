@@ -2,7 +2,13 @@
 font-family:Rachana;
 font-size:20px;
 font-weight:40px;
+ input font-color:rgb(9, 55, 52);
+ body background-color:rgb(245,245,245);
  */
+body{
+    background-color: rgb(245,245,245);
+}
+
 header{
     width: 99%;
     height:80px;
@@ -24,7 +30,7 @@ header input {
     height: 50%;
     float: left;
     padding:4px 20px 0 0 ;
-    color: rgb(47,79,79);
+    color: rgb(9, 55, 52);
     font-family:Rachana;
     font-weight: 40px;
     font-size: 20px;
@@ -32,7 +38,7 @@ header input {
     border-bottom-right-radius: 5px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    background-color: rgb(255, 228, 196, 0.9);
+    background-color: rgb(254, 161, 164);
     border-radius: 8px;
     box-shadow: none;
     outline: none;
@@ -45,9 +51,20 @@ header input {
      right: 25px;
      z-index:2;
      border-radius: 25px;
-     background-color:rgb(219,112,147);
-     border: 0px;
+     background-color: rgb(255, 253, 253);
+     border: 0px #3d4f4d;
      box-shadow: none;
      outline: none;
-
  }
+ header button svg{
+     width:16px;
+     height: 18px;
+     position: absolute;
+     top:26%;
+     left: 50%;
+     margin: 5px 0 0 -8px;
+     cursor:pointer;
+ }
+header button svg .fill{
+    fill:rgb(47,79,79) ;
+}
