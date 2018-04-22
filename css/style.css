@@ -71,7 +71,7 @@ header button svg .fill{
 }
 /*Inputs */
 .container1 .container2 .container3{
-    width:100%;
+    width: 80%;
     float: left;
     padding: 20px;
 }
@@ -151,7 +151,7 @@ button.remove {
     float: right;
     color: red;
     margin: -10px 16px -9px 0px;
-    padding: 10px 0 10px 0px;
+    padding: 10px 7px 10px 1px;
 }
 button.complete {
     width: 50px;
