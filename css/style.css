@@ -150,7 +150,7 @@ button.remove {
     height: 31px;
     float: right;
     color: red;
-    margin: -10px 16px -9px 0px;
+    margin: -27px 16px -9px 0px;
     padding: 10px 7px 10px 1px;
 }
 button.complete {
@@ -158,5 +158,5 @@ button.complete {
     height: 31px;
     float: right;
     color: green;
-    margin: -10px 13px 86px 36px;
+    margin: -27px 72px 86px 36px;
     padding: 2px 0 20px 0px;
