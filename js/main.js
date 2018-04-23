@@ -7,12 +7,24 @@ document.getElementById('add').addEventListener('click',function(){
 
 });
 
- function removeItem(e) {
+ function removeItem() {
      var item=this.parentNode.parentNode;
      var parent=item.parentNode;
-     parent.removeChild(item);
-     
+     parent.removeChild(item);    
  }
+function completeItem(){
+    var item=this.parentNode.parentNode;
+    var parent=item.parentNode;
+    var id= parent.id;
+    var value= item.item.innerText;
+/*statment if item is complete or uncompleted*/
+   var target = (id === 'todo') ? document.getElementById('complete'): document.getElementById('todo');
+ 
+ parent.removeChild(item);
+ target.insertBefore(item,target.childNode[0]);
+
+}
+
 function addItemToDo(text){
     var list=document.getElementById('todo');
 
@@ -25,15 +37,22 @@ function addItemToDo(text){
     var remove=document.createElement('button');
     remove.classList.add('remove');
 
-/*click on button for remove item*/
+/*event click on button to remove item*/
     remove.addEventListener('click', removeItem);
 
-    var completed=document.createElement('button');
-    completed.classList.add('competed');
+
+
+    var complete= document.createElement('button');
+    complete.classList.add('complete');
+
+/*event click  on button to complete item*/
+    complete.addEventListener('click', completeItem);
+
 
     buttons.appendChild(remove);
-    buttons.appendChild(completed);
+    buttons.appendChild(complete);
     item.appendChild(buttons);
+
     list.appendChild(item);
 
 }
