@@ -7,6 +7,12 @@ document.getElementById('add').addEventListener('click',function(){
 
 });
 
+ function removeItem(e) {
+     var item=this.parentNode.parentNode;
+     var parent=item.parentNode;
+     parent.removeChild(item);
+     
+ }
 function addItemToDo(text){
     var list=document.getElementById('todo');
 
@@ -19,6 +25,8 @@ function addItemToDo(text){
     var remove=document.createElement('button');
     remove.classList.add('remove');
 
+/*click on button for remove item*/
+    remove.addEventListener('click', removeItem);
 
     var completed=document.createElement('button');
     completed.classList.add('competed');
