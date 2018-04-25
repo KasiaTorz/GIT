@@ -1,3 +1,9 @@
+
+
+
+
+
+
 /*If user click on the add button then text inside input field will be add to list of task*/
 
 
@@ -53,6 +59,6 @@ function addItemToDo(text){
     buttons.appendChild(complete);
     item.appendChild(buttons);
 
-    list.appendChild(item);
+    list.insertBefore(item, list.childNodes[0]);
 
 }
