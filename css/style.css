@@ -162,10 +162,29 @@ button.complete {
     padding: 2px 0 20px 0px;
 
 }
-ul.todo#complete:not:empty:before{
+ul.todo#complete:before{
     content:'';
     width:154px;
     height: 1px;
-    background:#7e57c2
-   
+    background:#7e57c2;
+    position:absolute;
+    top:30px;
+    left:50%;
+    margin: 0 0 0 -75%;
+
+}
+ul.todo#todo:empty:after{
+    content:" You made it";
+}
+ul.todo#complete:empty:after{
+    content:'Some task have to be done in 100%';
+    margin: 15px 0 0 0;
+}
+ul.todo#todo:after,ul.todo#complete::after{
+    width: 100%;
+    display: block;
+    text-align:center;
+    font-size: 12px;
+    color:yellowgreen;
+
 }

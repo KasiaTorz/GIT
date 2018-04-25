@@ -1,4 +1,8 @@
-
+/*create data object*/
+var data= {
+    todo:[]
+    complete:[]
+};
 
 
 
@@ -9,7 +13,13 @@
 
 document.getElementById('add').addEventListener('click',function(){
     var value= document.getElementById('item').value;
-    if (value) addItemToDo(value); /*if write task in input call function addItemToDo*/
+    if (value) {                       /*if write task in input call function addItemToDo*/
+
+     addItemToDo(value);
+     document.getElementById('item').value;
+     data.todo.push(value);
+     console.log(data);
+    } 
 
 });
 
