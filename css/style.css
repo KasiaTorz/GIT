@@ -162,3 +162,10 @@ button.complete {
     padding: 2px 0 20px 0px;
 
 }
+ul.todo#complete:not:empty:before{
+    content:'';
+    width:154px;
+    height: 1px;
+    background:#7e57c2
+   
+}
