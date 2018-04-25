@@ -1,11 +1,8 @@
 /*create data object*/
 var data= {
-    todo:[]
+    todo:[],
     complete:[]
 };
-
-
-
 
 
 /*If user click on the add button then text inside input field will be add to list of task*/
@@ -13,11 +10,11 @@ var data= {
 
 document.getElementById('add').addEventListener('click',function(){
     var value= document.getElementById('item').value;
-    if (value) {                       /*if write task in input call function addItemToDo*/
-
+    if (value) {                       
      addItemToDo(value);
-     document.getElementById('item').value;
+     document.getElementById('item').value = '';
      data.todo.push(value);
+
      console.log(data);
     } 
 
@@ -31,8 +28,8 @@ document.getElementById('add').addEventListener('click',function(){
 function completeItem(){
     var item=this.parentNode.parentNode;
     var parent=item.parentNode;
-    var id= parent.id;
-    var value= item.item.innerText;
+    var id = parent.id;
+    var value= item.innerText;
 /*statment if item is complete or uncompleted*/
    var target = (id === 'todo') ? document.getElementById('complete'): document.getElementById('todo');
  
