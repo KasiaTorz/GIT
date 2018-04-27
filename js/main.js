@@ -29,7 +29,10 @@ function completeItem(){
     var item=this.parentNode.parentNode;
     var parent=item.parentNode;
     var id = parent.id;
-    var value= item.innerText;
+    var value=item.innerText;
+    data.todo.splice(data.todo.indexOf(value),1);
+    data.complete.push(value);
+   
 /*statment if item is complete or uncompleted*/
    var target = (id === 'todo') ? document.getElementById('complete'): document.getElementById('todo');
  
