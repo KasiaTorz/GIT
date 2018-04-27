@@ -23,6 +23,15 @@ document.getElementById('add').addEventListener('click',function(){
  function removeItem() {
      var item=this.parentNode.parentNode;
      var parent=item.parentNode;
+     var value=item.innerText;
+
+     if(id ==='todo'){
+         data.todo.splice(data.todo.indexOf(value),1);
+        } else{
+            data.complete.splice(data.complete.indexOf(value),1);
+        }
+    console.log(data);
+
      parent.removeChild(item);    
  }
 function completeItem(){
