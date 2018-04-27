@@ -3,7 +3,7 @@ var data=(localStorage.getItem('todoList'))?JSON.parse(localStorage.getItem('tod
     todo:[],
     complete:[]
 };
- renderToDoList(){
+ renderToDoList();{
     
 }
 
@@ -26,7 +26,12 @@ document.getElementById('add').addEventListener('click',function(){
       if (!data.todo.lenght && !data.complete.lenght)
       return;
 
-      
+      for(var i=0; i<data.todo.lenght;i++){
+       var value = data.todo[i];
+      }
+      for (var j=0; j<data.complete.lenght;j++){
+          var value=data.complete[j];
+      }
 
   }
  function dataObjectUpDated(){
