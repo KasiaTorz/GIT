@@ -19,6 +19,9 @@ document.getElementById('add').addEventListener('click',function(){
     } 
 
 });
+ function dataObjectUpDated(){
+  localStorage.setItem('todoList',JSON.stringify(data));
+ }
 
  function removeItem() {
      var item=this.parentNode.parentNode;
@@ -30,8 +33,7 @@ document.getElementById('add').addEventListener('click',function(){
         } else{
             data.complete.splice(data.complete.indexOf(value),1);
         }
-    console.log(data);
-
+     dataObjectUpDated();
      parent.removeChild(item);    
  }
 function completeItem(){
