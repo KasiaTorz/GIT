@@ -1,9 +1,11 @@
 /*create data object*/
-var data= {
+var data=(localStorage.getItem('todoList'))?JSON.parse(localStorage.getItem('todoList')): {
     todo:[],
     complete:[]
 };
-
+ renderToDoList(){
+    
+}
 
 /*If user click on the add button then text inside input field will be add to list of task*/
 
@@ -13,12 +15,20 @@ document.getElementById('add').addEventListener('click',function(){
     if (value) {                       
      addItemToDo(value);
      document.getElementById('item').value = '';
+
      data.todo.push(value);
 
-     console.log(data);
+     dataObjectUpDated();
     } 
 
 });
+  function renderToDoList(){
+      if (!data.todo.lenght && !data.complete.lenght)
+      return;
+
+      
+
+  }
  function dataObjectUpDated(){
   localStorage.setItem('todoList',JSON.stringify(data));
  }
