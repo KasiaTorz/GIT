@@ -81,7 +81,7 @@ function completeItem(){
 
     dataObjectUpDated();
 /*statment if item is complete or uncompleted*/
- 
+var target = (id === 'todo') ? document.getElementById('complete'): document.getElementById('todo');
  parent.removeChild(item);
  target.insertBefore(item,target.childNode[0]);
 
@@ -96,7 +96,7 @@ function addItemToDOM(text,complete){
     var buttons= document.createElement('div');
     buttons.classList.add('buttons');
 
-    var remove=document.createElement('button');
+    var remove = document.createElement('button');
     remove.classList.add('remove');
 
 /*event click on button to remove item*/
