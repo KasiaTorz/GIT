@@ -87,8 +87,8 @@ function completeItem(){
 
 }
 
-function addItemToDo(text){
-    var list=document.getElementById('todo');
+function addItemToDOM(text,complete){
+    var list= (complete)? document.getElementById('complete'):document.getElementById('todo');
 
     var item= document.createElement('li'); /*write in input task and add will create new li*/
     item.innerText=text;
