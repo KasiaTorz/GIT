@@ -59,11 +59,17 @@ document.getElementById('add').addEventListener('click',function(){
 
      if(id ==='todo'){
          data.todo.splice(data.todo.indexOf(value),1);
+         data.complete.push(value);
         } else{
             data.complete.splice(data.complete.indexOf(value),1);
+            data.todo.push(value);
         }
      dataObjectUpDated();
-     parent.removeChild(item);    
+     /*if to check item to add complete list*/
+     var target = (id === 'todo') ? document.getElementById('complete'): document.getElementById('todo');
+  
+     parent.removeChild(item);  
+     target.insertBefore(item,target.childNodes[0]);  
  }
 function completeItem(){
     var item=this.parentNode.parentNode;
@@ -75,7 +81,6 @@ function completeItem(){
 
     dataObjectUpDated();
 /*statment if item is complete or uncompleted*/
-   var target = (id === 'todo') ? document.getElementById('complete'): document.getElementById('todo');
  
  parent.removeChild(item);
  target.insertBefore(item,target.childNode[0]);
