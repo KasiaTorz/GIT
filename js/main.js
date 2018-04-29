@@ -34,16 +34,18 @@ document.getElementById('add').addEventListener('click',function(){
 
 
   function renderToDoList(){
-      if (!data.todo.lenght && !data.complete.length)
+      if (!data.todo.length && !data.complete.length)
       return;
 
-      for(var i=0; i<data.todo.lenght;i++){
+      for(var i=0; i<data.todo.length;i++){
        var value = data.todo[i];
-      }
-      for (var j=0; j<data.complete.lenght;j++){
-          var value=data.complete[j];
+       addItemToDOM(value,true);
       }
 
+      for (var j=0; j< data.complete.length;j++){
+          var value= data.complete[j];
+          addItemToDOM(value,true);
+      }
   }
  function dataObjectUpDated(){
   localStorage.setItem('todoList',JSON.stringify(data));
