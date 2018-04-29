@@ -13,15 +13,15 @@ var data=(localStorage.getItem('todoList'))?JSON.parse(localStorage.getItem('tod
 document.getElementById('add').addEventListener('click',function(){
     var value= document.getElementById('item').value;
     if (value) {                       
-     addItemToDo(value);
-     document.getElementById('item').value = '';
-
-     data.todo.push(value);
-
-     dataObjectUpDated();
+     addItem(value);
     } 
-
 });
+
+     document.getElementById('item').value = '';
+     data.todo.push(value);
+     dataObjectUpDated();
+dataObjectUpDated();
+
   function renderToDoList(){
       if (!data.todo.lenght && !data.complete.lenght)
       return;
@@ -58,7 +58,8 @@ function completeItem(){
     var value=item.innerText;
     data.todo.splice(data.todo.indexOf(value),1);
     data.complete.push(value);
-   
+
+    dataObjectUpDated();
 /*statment if item is complete or uncompleted*/
    var target = (id === 'todo') ? document.getElementById('complete'): document.getElementById('todo');
  
