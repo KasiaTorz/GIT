@@ -23,13 +23,18 @@ document.getElementById('add').addEventListener('click',function(){
                  addItem(value);
              }
      });
+    function addItem(value){
+     addItemToDOM(value);
+     document.getElementById('item').value='';
 
      data.todo.push(value);
      dataObjectUpDated();
-dataObjectUpDated();
+}
+
+
 
   function renderToDoList(){
-      if (!data.todo.lenght && !data.complete.lenght)
+      if (!data.todo.lenght && !data.complete.length)
       return;
 
       for(var i=0; i<data.todo.lenght;i++){
