@@ -17,7 +17,13 @@ document.getElementById('add').addEventListener('click',function(){
     } 
 });
 
-     document.getElementById('item').value = '';
+     document.getElementById('item').addEventListener('keydown',function(e){
+             var value = this.value;
+             if (e.code === 'Enter' && value){
+                 addItem(value);
+             }
+     });
+
      data.todo.push(value);
      dataObjectUpDated();
 dataObjectUpDated();
