@@ -54,6 +54,7 @@ document.getElementById('add').addEventListener('click',function(){
  function removeItem() {
      var item=this.parentNode.parentNode;
      var parent=item.parentNode;
+     var id= parent.id;
      var value=item.innerText;
 
      if(id ==='todo'){
