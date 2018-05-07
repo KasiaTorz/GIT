@@ -1,3 +1,7 @@
+/*java script Date*/
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+
 /*create data object*/
 var data=(localStorage.getItem('todoList'))?JSON.parse(localStorage.getItem('todoList')): {
     todo:[],
