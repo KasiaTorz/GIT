@@ -83,7 +83,7 @@ function completeItem(){
 /*statment if item is complete or uncompleted*/
 var target = (id === 'todo') ? document.getElementById('complete'): document.getElementById('todo');
  parent.removeChild(item);
- target.insertBefore(item,target.childNode[0]);
+ target.insertBefore(item,target.childNodes[0]);
 
 }
 
