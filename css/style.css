@@ -10,9 +10,19 @@ body{
     padding: 100px 0 0 0 ;
 }
 #date{
-width: 100px;
-height: 100px;
-border-style:double;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 800px;
+    height: 110px;
+    border-style: double;
+    position: fixed;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
+#date p{
+    font-family: Rachana;
+    font-size: 2px;
 }
 /*Header */
 header{
@@ -36,6 +46,8 @@ header input {
     width: 90%;
     height: 50%;
     float: left;
+    margin:-17px;
+    margin-left: 20px;
     padding:4px 20px 0 0 ;
     color: rgb(9, 55, 52);
     font-family:Rachana;
