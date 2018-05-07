@@ -84,7 +84,6 @@ function completeItem(){
 var target = (id === 'todo') ? document.getElementById('complete'): document.getElementById('todo');
  parent.removeChild(item);
  target.insertBefore(item,target.childNodes[0]);
-
 }
 
 function addItemToDOM(text,complete){

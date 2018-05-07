@@ -13,6 +13,7 @@ body{
 header{
     width: 99%;
     height:80px;
+    margin-top: 100px;
     position: fixed;
     padding: 13px;
     top: 0;
