@@ -5,12 +5,12 @@ font-weight:40px;
  input font-color:rgb(9, 55, 52);
  body background-color:rgb(245,245,245);
  */
+ html, body{
+     height: 100%;
+ }
 body{
     background-color: rgb(245,245,245);
     padding: 100px 0 0 0 ;
-    
-    
-
 }
 #date{
     margin-top: 20px;
@@ -216,6 +216,47 @@ ul.todo#todo:after,ul.todo#complete::after{
     padding: 25px;
     display: inline-block;
     justify-content: center;
+    align-items: center;
+    line-height: 25px;
+}
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin: 14px;
+}
+.app-container h3{
+    margin: 0 0 0 25px;
+}
+/*section new-task*/
+.new-task-container{
+    margin-bottom: 20px;
+}
+/*task list*/
+.task-container ul{
+margin:0;
+padding: 0;
+list-style: none;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    margin-top: 13px;
+    margin-right: -94px;
+}
+.btn-success{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    margin-top:13px;
+    margin-right:-94px;  
+}
+.btn-danger {
 
-
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    margin-top: 12px;
 }
