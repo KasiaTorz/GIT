@@ -8,6 +8,9 @@ font-weight:40px;
 body{
     background-color: rgb(245,245,245);
     padding: 100px 0 0 0 ;
+    
+    
+
 }
 #date{
     margin-top: 20px;
@@ -29,7 +32,7 @@ header{
     width: 99%;
     height:80px;
     margin-top: 100px;
-    position: fixed;
+    position: relative;
     padding: 13px;
     top: 0;
     left: 0;
@@ -115,7 +118,7 @@ ul.todo1{
     float: left;
 }
 ul.todo1 li{
-    width: 100%;
+    width: 450px;
     float: left;
     height: 50px;
     font-size: 14px;
@@ -204,5 +207,15 @@ ul.todo#todo:after,ul.todo#complete::after{
     text-align:center;
     font-size: 12px;
     color:yellowgreen;
+
+}
+/*style main with three section*/
+.app-container{
+    max-width: 450px;
+    width:100%;
+    padding: 25px;
+    display: inline-block;
+    justify-content: center;
+
 
 }
