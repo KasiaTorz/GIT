@@ -123,6 +123,11 @@ function addItemToDOM(text,complete){
 }
 
 //section to do list//
+var taskContainer= document.querySelector('.task-container ul');
+
+//variables//
+
+//DOM load//
 document.addEventListener('DOMContentLoaded',function(){
 showTasks();
 });

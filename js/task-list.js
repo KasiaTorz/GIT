@@ -1,5 +1,6 @@
+//function to show in input//
 function showTasks(){
-tasks.forEach(function(task){
-console.log(task);
+tasks.forEach(function(title){
+    addNewTask(title);
 });
 }
