@@ -123,3 +123,6 @@ function addItemToDOM(text,complete){
 }
 
 //section to do list//
+document.addEventListener('DOMContentLoaded',function(){
+showTasks();
+});
