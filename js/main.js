@@ -121,3 +121,5 @@ function addItemToDOM(text,complete){
     list.insertBefore(item, list.childNodes[0]);
 
 }
+
+//section to do list//
