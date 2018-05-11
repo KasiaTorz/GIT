@@ -20,5 +20,10 @@ return'<div class="input-group">'+
 };
 //function with addEventListener submit//
 function addBindTaskEvents(){
-    
+    //on submit //
+    newTaskForm.addEventListener('submit',function(event){
+        event.preventDefault();
+        
+
+    })
 }
