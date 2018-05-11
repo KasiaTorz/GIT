@@ -25,7 +25,9 @@ function addBindTaskEvents(){
         event.preventDefault();
         var title = this.querySelector('input').value;
         addNewTask('title')
-
+    if(title){
+        addNewTask(title);
+    }
 
     })
 }
