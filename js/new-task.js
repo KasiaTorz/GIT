@@ -18,3 +18,7 @@ return'<div class="input-group">'+
                       '</span>'+
     '</div>';            
 };
+//function with addEventListener submit//
+function addBindTaskEvents(){
+    
+}
