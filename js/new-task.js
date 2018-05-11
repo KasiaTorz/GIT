@@ -23,7 +23,9 @@ function addBindTaskEvents(){
     //on submit //
     newTaskForm.addEventListener('submit',function(event){
         event.preventDefault();
-        
+        var title = this.querySelector('input').value;
+        addNewTask('title')
+
 
     })
 }
