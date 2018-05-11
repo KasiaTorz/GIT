@@ -129,5 +129,6 @@ var taskContainer= document.querySelector('.task-container ul');
 
 //DOM load//
 document.addEventListener('DOMContentLoaded',function(){
-showTasks();
+    addBindTaskEvents();
+    showTasks();
 });
