@@ -123,6 +123,7 @@ function addItemToDOM(text,complete){
 }
 
 //section to do list//
+var newTaskForm= document.querySelector('.new-task-container form');
 var taskContainer= document.querySelector('.task-container ul');
 
 //variables//
