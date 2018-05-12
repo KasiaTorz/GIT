@@ -3,7 +3,8 @@ function addNewTask(title){
     taskLi.classList.add('single-task');
     taskLi.innerHTML=prepareTaskHTML(title);
 
-    // events to toggle and remove
+    // events on button to toggle and remove
+    var toggleCompleteBtn= taskLi.querySelector('.toggle-complete-btn');
     
     // add task to DOM//
 taskContainer.appendChild(taskLi);
