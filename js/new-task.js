@@ -10,7 +10,7 @@ function addNewTask(title){
         toggleTaskComplete();
     });
     deleteBtn.addEventListener('click', function(){
-
+        deleteTask();
     });
 
     // add task to DOM//
