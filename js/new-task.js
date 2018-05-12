@@ -2,6 +2,8 @@ function addNewTask(title){
     var taskLi= document.createElement('li');
     taskLi.classList.add('single-task');
     taskLi.innerHTML=prepareTaskHTML(title);
+
+    // events to toggle and remove
     
     // add task to DOM//
 taskContainer.appendChild(taskLi);
