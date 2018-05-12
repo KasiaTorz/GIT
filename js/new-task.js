@@ -7,7 +7,7 @@ function addNewTask(title){
     var toggleCompleteBtn= taskLi.querySelector('.toggle-complete-btn');
     var deleteBtn= taskLi.querySelector('.delete-task-btn');
     toggleCompleteBtn.addEventListener('click',function(){
-        
+        toggleTaskComplete();
     });
     deleteBtn.addEventListener('click', function(){
 
