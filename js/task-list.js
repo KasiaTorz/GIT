@@ -7,6 +7,7 @@ tasks.forEach(function(title){
 //function to delete//
 function deleteTask(task){
 var liDelete = task.closest('li');
+task.closest('ul').removeChild(liDelete);
 };
 
 //function to complete//
