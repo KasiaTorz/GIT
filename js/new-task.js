@@ -7,10 +7,10 @@ function addNewTask(title){
     var toggleCompleteBtn= taskLi.querySelector('.toggle-complete-btn');
     var deleteBtn= taskLi.querySelector('.delete-task-btn');
     toggleCompleteBtn.addEventListener('click',function(){
-        toggleTaskComplete();
+        toggleTaskComplete(this);
     });
     deleteBtn.addEventListener('click', function(){
-        deleteTask();
+        deleteTask(this);
     });
 
     // add task to DOM//

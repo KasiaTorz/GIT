@@ -11,6 +11,6 @@ function deleteTask(){
 
 //function to complete//
 function toggleTaskComplete(task){ 
-    task.classList.toggle('btn-success');
+    task.classList.toggle('btn-danger');
 }
     
