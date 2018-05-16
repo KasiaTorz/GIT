@@ -275,7 +275,8 @@ list-style: none;
 
 }
 .input-group2{
-    display: flex;
-    margin-right: 107px;
-    margin-left: 50px;
-}
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        display: inherit;
+    }
