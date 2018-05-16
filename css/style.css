@@ -260,3 +260,19 @@ list-style: none;
     border-color: #d43f3a;
     margin-top: 12px;
 }
+#rodzic{
+    background-color:#ffff;
+    border:3px solid gray;
+    font-size:1.4em;
+}
+.input-group{
+    display: inline-block;
+    width: 70%;
+    background-color: #d9534f;
+
+}
+.input-group2{
+    display: inline-block;
+    width: 30%;
+    background-color: #5cb85c;
+}
