@@ -264,10 +264,13 @@ list-style: none;
     background-color:#ffff;
     border:3px solid gray;
     font-size:1.4em;
+    width: 500px;
+    height: 500px;
 }
 .input-group{
     display: inline-block;
     width: 70%;
+    he
     background-color: #d9534f;
 
 }
