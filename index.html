@@ -48,18 +48,52 @@
     <h3 class="text-center">List to do in progress</h3>
     <section class="new-task-container">
         <form>
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Task in progress">
-                <span class="input-group-btn">
-                    <button class="btn btn-primary" type="submit">Zatwierdz</button>
-                  </span>
-              </div>
+            <div id="rodzic">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Task in progress">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">Zatwierdz</button>
+                    </span>
+                </div>
+
+                <div id="input-group2">
+                    <button type="button" class="check-add__submit" id="todoAddSubmit">Add</button>
+                  <input class="check-add__input" id="todoAddInput" type="text" placeholder="Counter" />
+                  <button type="button" class="check-add__submit" id="todoAddSubmit">Add</button>
+                </div>
             </div>
         </form>
     </section>
-    <section class="task-container">
+    <section class="new-task-container">
      <ul></ul>
     </section>
+    <style>
+        #rodzic{
+            background-color:#ffff;
+            border:3px dashed red;
+            font-size:1.4em;
+        }
+        #dziecko1{
+        width:70%;
+        background-color:rgb(36, 130, 161);
+        display: 
+      }
+
+      #dziecko2 {
+        width:30%;
+        background-color:rgb(133, 30, 90);
+      }
+
+      #dziecko1, #dziecko2 {
+        display:inline-block;
+
+      }
+        
+    </style>
+    <div id="rodzic">
+            <div id="dziecko1"></div>
+            <div id="dziecko2"></div>      
+    </div>
 </main>
 
 </body>
