@@ -275,7 +275,7 @@ list-style: none;
 
 }
 .input-group2{
-    display: inline-block;
-    width: 30%;
-    background-color: #5cb85c;
+    display: flex;
+    margin-right: 107px;
+    margin-left: 50px;
 }
