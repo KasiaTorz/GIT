@@ -136,5 +136,6 @@ document.addEventListener('DOMContentLoaded',function(){
 
 /*counter qty*/
 function modify_qty(val){
+  var qty= document.getElementById('qty')val;
     
 }
