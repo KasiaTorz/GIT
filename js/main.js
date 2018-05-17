@@ -134,3 +134,7 @@ document.addEventListener('DOMContentLoaded',function(){
     showTasks();
 });
 
+/*counter qty*/
+function modify_qty(val){
+    
+}
