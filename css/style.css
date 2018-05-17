@@ -260,23 +260,13 @@ list-style: none;
     border-color: #d43f3a;
     margin-top: 12px;
 }
-#rodzic{
-    background-color:#ffff;
-    border:3px solid gray;
-    font-size:1.4em;
-    width: 500px;
-    height: 500px;
+/*counter quantity*/
+qty{
+font-size: 20px;
+background-color: transparent;
+text-align: center;
+border-width: 0;
+width: 50%;
+margin:0 0 0 0;
+color:#fff;
 }
-.input-group{
-    display: inline-block;
-    width: 70%;
-    he
-    background-color: #d9534f;
-
-}
-.input-group2{
-        margin-top: 20px;
-        margin-left: 30px;
-        margin-right: 30px;
-        display: inherit;
-    }
